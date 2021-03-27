@@ -1,8 +1,9 @@
+# import modules
 import os
-
 import csv
 
-csvpath = os.path.join('Resources', 'election_data.csv')
-
+# open source file
+csvpath = os.path.join("Resources", "election_data.csv")
 with open(csvpath) as csvfile:
-    read_budget_data = csv.reader(csvfile, delimiter=',')
+    csvreader = csv.reader(csvfile, delimiter=',')
+    election_data = csvreader
